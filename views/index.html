@@ -4,9 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="./public/css/output.css">
+    <link rel="stylesheet" href="../public/css/output.css">
 </head>
-<body>
-    
+<body class="bg-gray-100 dark:bg-gray-900 font-sans flex items-center justify-center min-h-screen p-4">
+    <!-- Contenedor -->
+    <header class="relative flex h-auto min-h-screen w-full flex-col items-center justify-center bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden p-4">
+
+        <!-- Contenedor intermerdario -->
+        <div class="layout-container flex h-full grow flex-col items-center justify-center">
+
+            <!-- Caja formulario -->
+            <div class="layout-content-container flex w-full flex-col items-center 
+                rounded-lg bg-white dark:bg-background-dark shadow-xl 
+                p-6 sm:p-8 md:p-10 lg:p-12">
+
+                <!-- Titulo -->
+                <h1 class="text-primary dark:text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2 text-center">Inventrack</h1>
+                <p class="text-gray-600 dark:text-gray-400 mb-8 text-center text-sm sm:text-base md:text-lg">Gestión de inventario y producción</p>
+
+                <!-- Formulario -->
+                <div class="w-full space-y-4">
+                    <div class="relative">
+                        <input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden 
+                    rounded-lg border border-gray-300 dark:border-gray-700 
+                    bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-200 
+                    focus:outline-none focus:ring-2 focus:ring-primary 
+                    h-10 sm:h-12 md:h-14 
+                    placeholder:text-gray-400 dark:placeholder:text-gray-500 
+                    p-2 sm:p-3 md:p-4 text-base font-normal leading-normal"placeholder="Correo Eltronico" type="email">
+                    </div>
+                    <div class="relative">
+                        <input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden 
+                    rounded-lg border border-gray-300 dark:border-gray-700 
+                    bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-200 
+                    focus:outline-none focus:ring-2 focus:ring-primary 
+                    h-10 sm:h-12 md:h-14 
+                    placeholder:text-gray-400 dark:placeholder:text-gray-500 
+                    p-2 sm:p-3 md:p-4 text-base font-normal leading-norma"placeholder="Contraseña" type="password">
+                    </div>
+                </div>
+                <!-- boton -->
+                <div class="w-full mt-6">
+                    <button class="flex w-full cursor-pointer items-center justify-center overflow-hidden 
+                rounded-lg h-10 sm:h-12 md:h-14 px-3 sm:px-4 md:px-6 
+                bg-blue-600 text-white text-base sm:text-lg font-bold 
+                leading-normal tracking-wide hover:bg-blue-700 
+                transition-colors duration-200"><span class="truncate">Ingresa</span></button>
+                </div>
+                <!-- Enlace de registro -->
+                <div class="mt-6 text-center">
+                    <p class="text-gray-600 dark:text-gray-400 text-xs sm:text-sm md:text-base">¿No tienes cuenta?
+                        <a class="font-semibold text-blue-600 hover:underline" href="/views/register.html">Crear cuenta</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
